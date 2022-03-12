@@ -27,9 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install Dependencies
-        run: |
-          cd redivivus
-          npm run test
+        run: npm run test
       - name: Running Tests
         run: npm run test
 
