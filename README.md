@@ -1,4 +1,4 @@
-# Redivivus
+###
 <div align="center" display="flex" style="justify-content:flex-start;">
       <img align="center" alt="js" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
       <img align="center" alt="typescript" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
@@ -17,8 +17,9 @@
 
 <div id="desc"/>
 
-## 📝 Descrição
-O projeto pode ser baixado da play store através desse [link](http://play.google.com)Este projeto visa ensinar de forma ludica os estudantes a compreensão da logica de programação onde em um tabuleiro fisico e com o auxilio do aplicativo aqui presente eles irão sortear comandos e organiza-los de maneira eficiente para finalizar o jogo de forma mais rápida.
+## 📝 Redivivus
+O projeto pode ser baixado da play store através desse [link](http://play.google.com). <br>
+Este projeto visa ensinar de forma ludica os estudantes a compreensão da logica de programação  onde em um tabuleiro fisico e com o auxilio do aplicativo aqui presente eles irão sortear comandos e organiza-los de maneira eficiente para finalizar o jogo de forma mais rápida.
 
 <div id="howtogame"/>
 
