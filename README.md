@@ -11,8 +11,9 @@
  <a href="#desc">Sobre o projeto</a> •
  <a href="#howtogame">Como jogar?</a> •
  <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#prerequisitos">Pré-requisitos</a> • 
  <a href="#executando">Executar o projeto</a> • 
- <a href="#autor">Autor</a>
+ <a href="#autor">Autores</a>
 </p>
 
 <div id="desc"/>
@@ -30,11 +31,18 @@ Para entreter e insentivar os estudantes o aplicativo aqui presente conta com um
 
 ## ✨ Tecnologias
 
--   [ ] [JavaScript](https://www.javascript.com/)
--   [ ] [React Native](https://reactnative.dev/)
--   [ ] [Expo](https://expo.dev/)
--   [ ] [Babel](https://babeljs.io/)
-  
+-   [JavaScript](https://www.javascript.com/)
+-   [React Native](https://reactnative.dev/)
+-   [Expo](https://expo.dev/)
+-   [Babel](https://babeljs.io/)
+
+<div id="prerequisitos"/>
+
+## ✔️ Pré-requisitos
+Para executa o projeto é necessário ter as seguintes ferramentas instaladas:
+
+-   [ ] Node
+
 <div id="executando" />
 
 ## ▶️ Executando o projeto
@@ -42,15 +50,18 @@ Para entreter e insentivar os estudantes o aplicativo aqui presente conta com um
 Executando o projeto na máquina:
 
 ```sh
-$ git clone https://github.com/MarcosLudgerio/test-api-python.git
-$ cd test-api-python
-$ pip install
-$ pytest
+$ git clone https://github.com/camilatereza/redivivus.git
+$ cd redivivus/redivivus
+$ npm install
+$ npm run start
 ```
+<br>
+
+> O projeto pode ser rodado utilizando o emulador ou no dispositivo físico através do aplicativo do expo, para saber mais consulte esse [link](https://rogercruz.medium.com/react-native-com-expo-um-exemplo-40e5574c6904)
 
 <div id="autor" />
 
-## 👩‍💻 Autor 
+## 👩‍💻 Autores
 
 <table>
    <tr>
