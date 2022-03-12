@@ -1,10 +1,10 @@
 ###
 <div align="center" display="flex" style="justify-content:flex-start;">
       <img align="center" alt="js" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-      <img align="center" alt="typescript" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+      <img align="center" alt="typescript" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+      <img align="center" alt="typescript" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg" />
       <img align="center" alt="react" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-      <img align="center" alt="node" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-      <img align="center" alt="yarn" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg" />
+      <img align="center" alt="npm" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
 </div>
 
 <p align="center">
@@ -30,10 +30,10 @@ Para entreter e insentivar os estudantes o aplicativo aqui presente conta com um
 
 ## ✨ Tecnologias
 
--   [ ] [JavaScript](https://www.python.org/)
--   [ ] [React Native](https://docs.pytest.org/en/6.2.x/contents.html)
--   [ ] [Expo](https://docs.python-requests.org/en/latest/)
--   [ ] [babel](https://github.com/MarcosLudgerio/api-automation-test)
+-   [ ] [JavaScript](https://www.javascript.com/)
+-   [ ] [React Native](https://reactnative.dev/)
+-   [ ] [Expo](https://expo.dev/)
+-   [ ] [Babel](https://babeljs.io/)
   
 <div id="executando" />
 
