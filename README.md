@@ -5,10 +5,12 @@
       <img align="center" alt="typescript" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg" />
       <img align="center" alt="react" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
       <img align="center" alt="npm" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+      <img align="center" alt="npm" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" />
 </div>
 
 <p align="center">
  <a href="#desc">Sobre o projeto</a> •
+ <a href="#roles">Regras do jogo</a> •
  <a href="#howtogame">Como jogar?</a> •
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#prerequisitos">Pré-requisitos</a> • 
@@ -25,7 +27,16 @@ Este projeto visa ensinar de forma ludica os estudantes a compreensão da logica
 <div id="howtogame"/>
 
 ## 🎮 Como Jogar?
-Para entreter e insentivar os estudantes o aplicativo aqui presente conta com uma tela com 4 botões representando cada jogador e a cada rodada um genero musical correspondente a cor do jogado será tocada, além de sortear os 5 comandos da rodada, onde dentre os 5 cada jogado precisará escolher os 3 melhoes para sua estrategia.
+* No aplicativo serão sorteados 5 movimentos;
+* Dentre os movimentos sorteado, o jogador escolhe 3;
+* Quem consegui percorrer todo o tabuleiro, vence.
+
+<div id="roles"/>
+
+## ⚠️ Regras do jogo
+1. Cada jogador deverá escolher 3 dos movimentos sorteados;
+2. Cada cor representa um gênero musical;
+3. Cada jogador fará movimento uma vez por rodada.
 
 <div id="tecnologias"/>
 
@@ -42,6 +53,8 @@ Para entreter e insentivar os estudantes o aplicativo aqui presente conta com um
 Para executa o projeto é necessário ter as seguintes ferramentas instaladas:
 
 -   [ ] Node
+-   [ ] Aplicativo do Expo no dispositivo 
+-   [ ] Emulador instalado no computador 
 
 <div id="executando" />
 
