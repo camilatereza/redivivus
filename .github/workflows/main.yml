@@ -45,15 +45,12 @@ jobs:
           key: ${{runner.os}}-gradle-caches-$${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-caches-
-            
       - name: Make Executable
         run: |
           cd android && chmod +x ./gradlew
-
       - name: Build Android App Bundle
         run: |
           cd android && ./gradlew bundleRelease --no-daemon
-          
       - name: Sign App Bundle
         id: sign_app
         uses: r0adkll/sign-android-release@v1
@@ -63,13 +60,11 @@ jobs:
           alias: ${{ secrets.ANDROID_SIGNING_ALIAS }}
           keyStorePassword: ${{ secrets.ANDROID_SIGNING_STORE_PASSWORD }}
           keyPassword: ${{ secrets.ANDROID_SIGNING_KEY_PASSWORD }}
-      
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
           name: Signed App Bundle
           path: ${{steps.sign_app.outputs.signedReleaseFile}}
-          
       - name: Deploy to Play Store
         uses: r0adkll/upload-google-play@v1
         with:
@@ -80,4 +75,3 @@ jobs:
           inAppUpdatePriority: 3
           userFraction: 0.5
           whatsNewDirectory: android/release-notes/
-     
