@@ -36,6 +36,7 @@ jobs:
       - uses: actions/setup-node@master
       - run: |
           npm install -g expo-cli --save-dev
+          npm install expo-updates --save-dev
           npx expo login -u luis.vitor -p VitorAmrm321@
           npx expo publish --non-interactive
 
