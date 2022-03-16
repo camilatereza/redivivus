@@ -11,7 +11,7 @@ import {
   DialogContent,
   DialogActions,
 } from "@react-native-material/core";
-import { instructions, sortInstructions } from './src/assets/constants/instructions';
+import { sortInstructions } from './src/assets/constants/instructions';
 import { sortStarResource } from './src/assets/constants/star.resources';
 
 export default function App() {
