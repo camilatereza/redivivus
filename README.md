@@ -21,22 +21,23 @@
 <div id="desc"/>
 
 ## 📝 Redivivus
-O projeto pode ser baixado da play store através desse [link](http://play.google.com). <br>
-Este projeto visa ensinar de forma ludica os estudantes a compreensão da logica de programação  onde em um tabuleiro fisico e com o auxilio do aplicativo aqui presente eles irão sortear comandos e organiza-los de maneira eficiente para finalizar o jogo de forma mais rápida.
+O projeto pode ser baixado da play store através deste [link](http://play.google.com). <br>
+Este projeto visa ensinar de forma lúdica os estudantes a compreensão da lógica de programação  onde em um tabuleiro físico e com o auxílio do aplicativo aqui presente eles irão sortear comandos e organizá-los de maneira eficiente para finalizar o jogo de forma mais rápida.
 
 <div id="howtogame"/>
 
 ## 🎮 Como Jogar?
 * No aplicativo serão sorteados 5 movimentos;
 * Dentre os movimentos sorteado, o jogador escolhe 3;
-* Quem consegui percorrer todo o tabuleiro, vence.
+* Quem consegue percorrer todo o tabuleiro, vence.
+
 
 <div id="roles"/>
 
 ## ⚠️ Regras do jogo
 1. Cada jogador deverá escolher 3 dos movimentos sorteados;
 2. Cada cor representa um gênero musical;
-3. Cada jogador fará movimento uma vez por rodada.
+3. Cada jogador fará um movimento uma vez por rodada.
 
 <div id="tecnologias"/>
 
@@ -50,8 +51,7 @@ Este projeto visa ensinar de forma ludica os estudantes a compreensão da logica
 <div id="prerequisitos"/>
 
 ## ✔️ Pré-requisitos
-Para executa o projeto é necessário ter as seguintes ferramentas instaladas:
-
+Para executar o projeto, é necessário ter as seguintes ferramentas instaladas:
 -   [ ] Node
 -   [ ] Aplicativo do Expo no dispositivo 
 -   [ ] Emulador instalado no computador 
