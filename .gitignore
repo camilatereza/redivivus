@@ -56,7 +56,6 @@ dist/
 
 # Test
 /coverage/
-/__tests__/__snapshots__/
 
 #node
 package-lock.json
