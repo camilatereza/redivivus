@@ -16,7 +16,7 @@
     "expo-font": "~10.0.4",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
-    "expo-updates": "^0.11.6",
+    "expo-updates": "~0.11.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
@@ -38,12 +38,13 @@
   },
   "private": true,
   "jest": {
-    "preset": "react-native",
+    "testEnvironment": "jsdom",
+    "preset": "jest-expo",
     "setupFiles": [
       "./jest.setup.js"
     ],
     "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!@react-native|react-native|expo-status-bar|@expo/.*)"
+      "node_modules/(?!((jest-)?react-native|@expo-.*|@react-native|react-clone-referenced-element|expo(nent)?|@expo(nent)?/.*|react-navigation|react-native-vector-icons|@unimodules))"
     ]
   }
 }

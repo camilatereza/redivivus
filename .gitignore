@@ -55,4 +55,7 @@ web-build/
 dist/
 
 # Test
-coverage/
+/coverage/
+
+#node
+package-lock.json
