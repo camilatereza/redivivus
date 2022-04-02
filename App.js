@@ -1,19 +1,17 @@
 import React from 'react';
+import { Lobster_400Regular } from '@expo-google-fonts/lobster';
+import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
-import { SafeAreaView } from 'react-native-web';
-import { useFonts } from '@expo-google-fonts/inter';
 
 import Home from './src/screens/Home';
 
 export default function App() {
 
-  let [fontsLoaded] = useFonts({
-    'Lobster-Regular': require('./src/assets/fonts/Lobster-Regular.ttf')
+  let [fontLoadded] = useFonts({
+    Lobster_400Regular
   });
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
+  if (!fontLoadded) return <AppLoading />;
   return (
     <Home />
   );
