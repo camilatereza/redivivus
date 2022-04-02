@@ -9,6 +9,7 @@ import { useFonts } from '@expo-google-fonts/inter';
 
 import { sortInstructions } from './src/assets/constants/instructions';
 import { sortStarResource } from './src/assets/constants/star.resources';
+import ButtonMusic from './src/components/ButtonMusic';
 
 export default function App() {
 
@@ -30,11 +31,7 @@ export default function App() {
   return (
     <Provider>
       <Wrap justify="center" items="center" style={styles.wrapper}>
-        <Flex w={'40%'} h={'38%'} mt={'20%'} mb={'20%'}>
-          <TouchableOpacity style={[styles.button, styles.rock]}>
-            <Text style={styles.text}>Rock</Text>
-          </TouchableOpacity>
-        </Flex>
+        <ButtonMusic value="Rock" color="#FFFC1A" />
         <Flex w={'40%'} h={'38%'} mt={'20%'} mb={'20%'} ml={'5%'}>
           <TouchableOpacity style={[styles.button, styles.sertanejo]}>
             <Text style={styles.text}>Sertanejo</Text>
