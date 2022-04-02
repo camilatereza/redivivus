@@ -1,27 +1,23 @@
 
 import React, { useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { Wrap, Flex, Button, IconButton, Box, Provider, VStack  } from '@react-native-material/core';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Dialog, DialogHeader, DialogContent, DialogActions, Wrap, Flex, Button, IconButton, Box, Provider, VStack } from "@react-native-material/core";
+
 import Icon from "@expo/vector-icons/MaterialCommunityIcons";
-import { useFonts } from '@expo-google-fonts/inter';
 import AppLoading from 'expo-app-loading';
-import {
-  Dialog,
-  DialogHeader,
-  DialogContent,
-  DialogActions,
-} from "@react-native-material/core";
+import { useFonts } from '@expo-google-fonts/inter';
+
 import { sortInstructions } from './src/assets/constants/instructions';
 import { sortStarResource } from './src/assets/constants/star.resources';
 
 export default function App() {
-  
+
   // zero -> nenhum modal visivel
   // um -> apenas intruções visiveis
   // dois -> apenas recompensas visiveis
   const [visible, setVisible] = useState(0);
   const [instructions, setInstructions] = useState(sortInstructions());
-  const [star,setStar]= useState(sortStarResource());
+  const [star, setStar] = useState(sortStarResource());
 
 
   let [fontsLoaded] = useFonts({
@@ -31,68 +27,69 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />;
   }
-
-
-
   return (
     <Provider>
       <Wrap justify="center" items="center" style={styles.wrapper}>
         <Flex w={'40%'} h={'38%'} mt={'20%'} mb={'20%'}>
-          <TouchableOpacity
-          style={[styles.button,styles.rock]}
-        ><Text style={styles.text}>Rock</Text></TouchableOpacity></Flex>
-        <Flex w={'40%'} h={'38%'} mt={'20%'}  mb={'20%'} ml={'5%'}>
-          <TouchableOpacity
-          style={[styles.button,styles.sertanejo]}
-        ><Text style={styles.text}>Sertanejo</Text></TouchableOpacity></Flex>
-        <Flex w={'100%'} h={'5%'} center="true">
-          <Button onPress={() => setVisible(1)} compact uppercase variant="outlined" title="Play"></Button>
-          <IconButton onPress={() => setVisible(2)} icon={props => <Icon  name="star" size={78} {...props} />} color="primary" />
+          <TouchableOpacity style={[styles.button, styles.rock]}>
+            <Text style={styles.text}>Rock</Text>
+          </TouchableOpacity>
         </Flex>
-        <Flex w={'40%'} h={'38%'} mt={'20%'}  mb={'20%'} >
+        <Flex w={'40%'} h={'38%'} mt={'20%'} mb={'20%'} ml={'5%'}>
+          <TouchableOpacity style={[styles.button, styles.sertanejo]}>
+            <Text style={styles.text}>Sertanejo</Text>
+          </TouchableOpacity>
+        </Flex>
+        <Flex w={'100%'} h={'5%'} center="true">
+          <Button onPress={() => setVisible(1)} variant="outlined" title="Play"></Button>
+          <IconButton onPress={() => setVisible(2)} icon={props => <Icon name="star" size={78} {...props} />} color="primary" />
+        </Flex>
+        <Flex w={'40%'} h={'38%'} mt={'20%'} mb={'20%'} >
           <TouchableOpacity
-          style={[styles.button,styles.pop]}
-        ><Text style={styles.text}>POP</Text></TouchableOpacity></Flex>
-        <Flex w={'40%'} h={'38%'} mt={'20%'}  mb={'20%'} ml={'5%'}>
-          <TouchableOpacity
-          style={[styles.button,styles.mpb]}  
-        ><Text style={styles.text}>MPB</Text></TouchableOpacity></Flex>
+            style={[styles.button, styles.pop]}
+          ><Text style={styles.text}>POP</Text></TouchableOpacity>
+        </Flex>
+        <Flex w={'40%'} h={'38%'} mt={'20%'} mb={'20%'} ml={'5%'}>
+          <TouchableOpacity style={[styles.button, styles.mpb]}>
+            <Text style={styles.text}>MPB</Text>
+          </TouchableOpacity>
+        </Flex>
       </Wrap>
       <Dialog visible={visible === 1} onDismiss={() => setVisible(0)}>
-          <DialogHeader title="Escolha 3 jogadas" />
-          <DialogContent>
-            <VStack spacing={2} p={20} >
-              {
-                instructions.map(
+        <DialogHeader title="Escolha 3 jogadas" />
+        <DialogContent>
+          <VStack spacing={2} p={20} >
+            {
+              instructions.map(
                 (item, index) => {
                   return <Flex inline key={index} >
-                      <Icon name={item.icon} size={16}></Icon>
-                      <Text>{item.text}</Text>
-                    </Flex>
+                    <Icon name={item.icon} size={16}></Icon>
+                    <Text>{item.text}</Text>
+                  </Flex>
                 })}
-            </VStack>
-          </DialogContent>
-          <DialogActions>
-            <Button
-              title="Ok"
-              compact
-              variant="text"
-              onPress={() => {
-                setVisible(0);
-                setTimeout(() =>setInstructions(sortInstructions()),1000)
-              }}
-            />
-          </DialogActions>
-        </Dialog>
+          </VStack>
+        </DialogContent>
+        <DialogActions>
+          <Button
+            title="Ok"
+            compact
+            variant="text"
+            onPress={() => {
+              setVisible(0);
+              setTimeout(() => setInstructions(sortInstructions()), 1000)
+            }}
+          />
+        </DialogActions>
+      </Dialog>
       <Dialog visible={visible === 2} onDismiss={() => setVisible(0)}>
         <DialogHeader title="Jogada Estrela" />
         <DialogContent>
           <Flex>
             {
               <Box spacing={2} p={20}>
-                  <Text>{star}</Text>
+                <Text>{star}</Text>
               </Box>
-              }
+            }
           </Flex>
         </DialogContent>
         <DialogActions>
@@ -102,12 +99,12 @@ export default function App() {
             variant="text"
             onPress={() => {
               setVisible(0);
-              setTimeout(() => setStar(sortStarResource()),1000)
+              setTimeout(() => setStar(sortStarResource()), 1000)
             }}
           />
         </DialogActions>
       </Dialog>
-      </Provider>
+    </Provider>
   );
 }
 
@@ -133,7 +130,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 15
   },
-  rock:{
+  rock: {
     backgroundColor: '#FFFC1A'
   },
   mpb: {
