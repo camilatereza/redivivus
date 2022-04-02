@@ -2,7 +2,10 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     button: {
-        flex: 1,
+        width: '100%',
+        height: '100%',
+        textAlign: 'center',
+        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 15,

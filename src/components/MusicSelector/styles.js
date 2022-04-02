@@ -1,15 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    button: {
+    container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 15,
-    },
-    text: {
-        fontSize: 32,
-        fontFamily: 'Lobster-Regular',
-        color: '#000111',
+        alignContent: 'center',
+        backgroundColor: 'red',
     }
 });
