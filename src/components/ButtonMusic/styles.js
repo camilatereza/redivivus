@@ -1,11 +1,16 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+    container: {
+        justifyContent: 'space-around'
+    },
     button: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 15,
+        borderWidth: 2,
+        borderColor: 'black',
+        borderRadius: 20,
     },
     text: {
         fontSize: 32,

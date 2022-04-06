@@ -2,17 +2,32 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center',
         alignContent: 'center',
-        backgroundColor: 'red'
+        flexDirection: 'row'
     },
     playButton: {
         width: 65,
         height: 45,
-        justifyContent: 'center',
+        backgroundColor: '#253fce',
+        borderRadius: 15,
+        flexDirection: 'row',
         alignItems: 'center',
-        borderRadius: 15
+        justifyContent: 'center',
+        borderColor: 'white',
+        borderWidth: 1
+    },
+    titleButton: {
+        flex: 1,
+        color: '#fffddf',
+        fontSize: 15,
+        textAlign: 'center',
+        textTransform: 'uppercase'
+    },
+    starButton: {
+        borderColor: 'white',
+        borderWidth: 1,
+        backgroundColor: '#253fce'
     }
 });
