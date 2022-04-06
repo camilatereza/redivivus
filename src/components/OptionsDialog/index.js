@@ -1,10 +1,14 @@
-import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
-import { Flex, Dialog, DialogHeader, DialogContent, DialogActions, VStack } from "@react-native-material/core";
+import React, { useState } from 'react';
+import { Text, Button, Flex, Dialog, DialogHeader, DialogContent, DialogActions, VStack } from "@react-native-material/core";
 
 import { styles } from './styles';
+import { sortInstructions } from '../../utils/instructions';
 
 export default function OptionsDialog({ visible }) {
+
+    var [instructions, setInstructions] = useState([]);
+
+
     return (
         <Dialog visible={visible} onDismiss={() => setVisible(0)}>
             <DialogHeader title="Escolha 3 jogadas" />
