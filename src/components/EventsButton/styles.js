@@ -4,7 +4,6 @@ export const styles = StyleSheet.create({
     container: {
         justifyContent: 'space-around',
         alignItems: 'center',
-        alignContent: 'center',
         flexDirection: 'row'
     },
     playButton: {
@@ -15,19 +14,17 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        borderColor: 'white',
-        borderWidth: 1
+        marginLeft: 0
     },
     titleButton: {
         flex: 1,
         color: '#fffddf',
-        fontSize: 15,
+        fontSize: 19,
+        fontWeight: 'bold',
         textAlign: 'center',
         textTransform: 'uppercase'
     },
     starButton: {
-        borderColor: 'white',
-        borderWidth: 1,
         backgroundColor: '#253fce'
     }
 });

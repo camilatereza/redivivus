@@ -12,9 +12,9 @@ export default function EventsButton() {
         <>
             <View style={styles.container}>
 
-                <IconButton style={styles.starButton} onPress={() => { }} icon={props => <Icon name="star" size={78} {...props} />} color="white" />
+                <IconButton style={styles.starButton} onPress={() => { }} icon={props => <Icon name="star" size={78} {...props} />} color="#fffddf" />
 
-                <RectButton style={styles.playButton} onPress={() => { handlePlay() }}>
+                <RectButton style={styles.playButton} underlayColor="green" onPress={() => { handlePlay() }}>
                     <Text style={styles.titleButton}>
                         Play
                     </Text>

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, Button, Flex, Dialog, DialogHeader, DialogContent, DialogActions, VStack } from "@react-native-material/core";
+import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 
 import { styles } from './styles';
 import { sortInstructions } from '../../utils/instructions';
@@ -8,9 +9,12 @@ export default function OptionsDialog({ visible }) {
 
     var [instructions, setInstructions] = useState([]);
 
+    useEffect(() => {
+        setInstructions(sortInstructions());
+    }, []);
 
     return (
-        <Dialog visible={visible} onDismiss={() => setVisible(0)}>
+        <Dialog visible={false} onDismiss={() => setVisible(0)}>
             <DialogHeader title="Escolha 3 jogadas" />
             <DialogContent>
                 <VStack spacing={2} p={20} >

@@ -6,18 +6,21 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fff',
-        marginTop: getStatusBarHeight() + 15,
+        backgroundColor: '#fffddf',
+        marginTop: getStatusBarHeight() + 5,
     },
     firstLine: {
+        paddingLeft: 5,
+        paddingTop: 20,
         flexDirection: 'row',
         width: '100%',
     },
     middleLine: {
-        width: '100%',
+        width: '100%'
     },
     lastLine: {
         flexDirection: 'row',
+        paddingLeft: 5,
         width: '100%'
     }
 });

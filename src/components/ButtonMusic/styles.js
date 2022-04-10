@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     },
     text: {
         fontSize: 32,
-        color: '#000111'
+        color: '#000111',
+        fontFamily: 'Lobster-Regular'
     }
 });
