@@ -6,6 +6,7 @@ import { Text, IconButton } from "@react-native-material/core";
 
 import { styles } from './styles';
 import OptionsDialog from '../OptionsDialog/index';
+import StarDialog from '../StarDialog';
 
 export default function EventsButton() {
     return (
@@ -19,8 +20,8 @@ export default function EventsButton() {
                         Play
                     </Text>
                 </RectButton>
+                <OptionsDialog />
             </View>
-            <OptionsDialog visible={false} />
         </>
 
     );

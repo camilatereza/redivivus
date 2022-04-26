@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
-import { Flex, Dialog, DialogHeader, DialogContent, DialogActions, VStack } from "@react-native-material/core";
+import { Text } from 'react-native';
+import { Flex, Dialog, DialogHeader, DialogContent, DialogActions, Box, Button } from "@react-native-material/core";
 
 
 import { styles } from './styles';
 
-export default function ButtonMusic({ star, visible }) {
+export default function StarDialog({ star, visibled }) {
     return (
-        <Dialog visible={visible === 2} onDismiss={() => setVisible(0)}>
+        <Dialog onDismiss={() => setVisible(0)}>
             <DialogHeader title="Jogada Estrela" />
             <DialogContent>
                 <Flex>

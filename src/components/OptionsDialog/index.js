@@ -5,7 +5,7 @@ import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import { styles } from './styles';
 import { sortInstructions } from '../../utils/instructions';
 
-export default function OptionsDialog({ visible }) {
+export default function OptionsDialog({ visibled }) {
 
     var [instructions, setInstructions] = useState([]);
 
