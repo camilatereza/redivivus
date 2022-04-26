@@ -5,6 +5,7 @@ import { Wrap } from '@react-native-material/core';
 import EventsButton from '../../components/EventsButton';
 import ButtonMusic from '../../components/ButtonMusic';
 
+
 import { styles } from './styles';
 
 export default function Home() {

@@ -8,13 +8,14 @@ import { sortInstructions } from '../../utils/instructions';
 export default function OptionsDialog({ visibled }) {
 
     var [instructions, setInstructions] = useState([]);
+    var [visible, setVisible] = useState(visibled);
 
     useEffect(() => {
         setInstructions(sortInstructions());
     }, []);
 
     return (
-        <Dialog visible={false} onDismiss={() => setVisible(0)}>
+        <Dialog visible={visibled} onDismiss={() => setVisible(0)}>
             <DialogHeader title="Escolha 3 jogadas" />
             <DialogContent>
                 <VStack spacing={2} p={20} >
