@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import App from '../App';
-import { instructions } from '../src/assets/constants/instructions';
+import { instructions } from '../src/utils/instructions';
 
 
 test('renders correctly', async () => {
-    const snap = renderer.create(<App ></App>).toJSON();
+  const snap = renderer.create(<App ></App>).toJSON();
 
-   expect(snap).toMatchSnapshot()
+  expect(snap).toMatchSnapshot()
 });
 
 test('Not null', () => {
