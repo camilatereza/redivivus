@@ -1,4 +1,4 @@
-import { random } from "../../utils/sort.util";
+import { random } from "./sort.util";
 
 const SUFFIX = 'casas';
 
