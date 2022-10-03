@@ -1,10 +1,19 @@
 {
+  "displayName": "redivivus",
+  "name": "redivivus",
   "expo": {
     "name": "redivivus",
     "slug": "redivivus",
-    "version": "1.0.0",
+    "version": "0.1",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "icon": "./src/assets/img/ic_launcher/1024.png",
+    "android": {
+      "package": "com.pmi.redivivus",
+      "versionCode": 1
+    },
+    "sdkVersion": "44.0.0"
+
   }
 }

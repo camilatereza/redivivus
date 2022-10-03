@@ -53,3 +53,9 @@ buck-out/
 .expo/
 web-build/
 dist/
+
+# Test
+/coverage/
+
+#node
+package-lock.json
